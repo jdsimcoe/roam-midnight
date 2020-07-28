@@ -37,7 +37,7 @@ code, pre, q, tt {
 }
 
 .roam-body .roam-app .roam-main .roam-article {
-  padding: 42px 0 120px 0 !important;
+  padding: 0 0 120px 0 !important;
 }
 
 .roam-article .rm-reference-main,
