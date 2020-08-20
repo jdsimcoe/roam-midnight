@@ -237,7 +237,7 @@ iframe { border: none !important; }
   }
   
   #buffer > div {
-    background: hsl(210,22%,6%) !important!;
+    background: hsl(210,22%,6%) !important;
   }
   
   .bp3-portal .bp3-overlay,
