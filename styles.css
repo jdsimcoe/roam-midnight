@@ -1,5 +1,5 @@
 :root {
-  --font-sans: system-ui, 'Inter', 'Inter var', sans-serif;
+  --font-sans: 'Inter', 'Inter var', sans-serif;
   --font-mono: ui-monospace, 'IBM Plex Mono', monospace;
 }
 
@@ -34,6 +34,10 @@ code, pre, q, tt {
 .roam-center > div:first-child {
   padding-right: 0 !important;
   padding-left: 0 !important;
+}
+
+.zoom-path-view {
+  margin-top: 8px !important;
 }
 
 .roam-body .roam-app .roam-main .roam-article {
@@ -210,6 +214,7 @@ iframe { border: none !important; }
 
 .zoom-path-view .rm-zoom-mask {
   background: none !important;
+  color: #ffffff !important;
 }
 
 .roam-log-preview .level2 + div {
@@ -226,6 +231,10 @@ iframe { border: none !important; }
   border-top: none !important;
 }
 
+#block-input-ghost {
+  opacity: 0.33 !important;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     background-color: hsl(206,23%,13%);
@@ -236,11 +245,24 @@ iframe { border: none !important; }
     border-top: 1px solid #CDD8E0 !important;
   }
   
-  #buffer > div {
+  .bp3-portal .bp3-menu {
+    border: 1px solid #CDD8E0 !important;
+  }
+  
+  .kanban-board {
+    background: #000000 !important;
+  }
+  
+  .kanban-column,
+  .kanban-card,
+  #buffer > div,
+  .bp3-portal .bp3-popover-content {
     background: hsl(210,22%,6%) !important;
   }
   
-  .bp3-portal .bp3-overlay,
+  .rm-query,
+  code,
+  .bp3-portal .bp3-menu,
   .roam-block,
   .roam-article textarea,
   .roam-app,
@@ -259,6 +281,7 @@ iframe { border: none !important; }
     border-left: 1px solid #CDD8E0 !important;
   }
   
+  .parent-path-wrapper .rm-page-ref-tag,
   .rm-reference-item .parent-path-wrapper .rm-page-ref-tag,
   .rm-reference-item .rm-page-ref-tag {
     color: hsl(206,23%,13%) !important;
@@ -293,12 +316,24 @@ iframe { border: none !important; }
     color: #CDD8E0 !important;
   }
   
+  .rm-autocomplete-result {
+    color: hsl(206,23%,13%) !important;
+  }
+  
   .roam-topbar .bp3-popover,
   .bp3-input,
   .bp3-elevation-3 {
     border: 1px solid #CDD8E0 !important;
     outline: none !important;
     box-shadow: none !important;
+  }
+  
+  .bp3-popover-content > .bp3-menu > div[style] {
+    color: hsl(206,23%,13%) !important;
+  }
+  
+  .roam-article .bp3-button .bp3-button-text {
+    color: #ffffff !important;
   }
   
   .roam-log-container .roam-log-preview:hover {
